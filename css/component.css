@@ -1,0 +1,310 @@
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+body, html { font-size: 100%; padding: 0; margin: 0;}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+
+
+h1 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 900; /* 300-light 400-regular -900-ultra-bold */
+  	text-transform: uppercase;
+  	color: #FFFFFF;/*#3b3b3b*/
+  	font-size: 19px;
+  	letter-spacing: 2px;
+}
+
+h2 {
+  	font-family: 'Lato',sans-serif;
+  	font-weight: 300;
+  	text-transform: uppercase;
+  	color: transparent;
+  	font-size: 12px;
+  	letter-spacing: 1px;
+  	text-shadow:1px  1px 1px #fff;
+  	/*border-bottom: 1px solid #b4b4b4;*/
+  	/*padding:0px 0px 15px 0px;*/
+}
+
+h3 {
+  	font-family: 'Lato',sans-serif;
+  	font-weight: 400;
+  	color: #3b3b3b;
+  	font-size: 14px;
+  	letter-spacing: 1px;
+  	padding:0px 0px 0px 0px;
+  	text-align: left;
+  	margin: 0 0 2px 0;
+}
+
+p a {
+	color: #FFFFFF;
+}
+
+.element-water {
+	color:#00CCFF;
+	color: transparent;
+}
+
+.element-wood {
+	color:yellow;
+	color: transparent;
+}
+
+.element-fire {
+	color:#FF8C00;
+	color: transparent;
+}
+
+.element-metal {
+	color:silver;
+	color: transparent;
+}
+
+p {
+  	font-family: 'Lato',sans-serif;
+  	font-weight: 400;
+  	color: #FFFFFF;
+  	width:70%;
+  	line-height: 22px;
+  	margin:10px 0;
+}
+ 
+ul {
+	display: inline-block;
+	margin:0 auto;
+	padding:0px;
+	width:75%;
+}
+
+ul li {
+	height: auto;
+	width: 60px;
+	/*background-color: #FFEBD7;*/
+	display: inline-block;
+	margin: 0px 0px 0px 0px;
+	float:left;
+	opacity: 1.0;
+	color: #FFFFFF;
+	font-weight: 300;
+	font-size: 14px;
+  	letter-spacing: 1px;
+	/*border-radius: 50px;
+	border: 1px solid #fff;*/
+}
+
+ul li:hover {
+	/*background-color: #EEEEEE;
+	opacity: 0.8;
+	-webkit-transition:all 0.2s ease-out;
+	-moz-transition:all 0.2s ease-out;
+	-o-transition:all 0.2s ease-out;
+	-ms-transition:all 0.2s ease-out;
+	transition:all 0.2s ease-out;*/
+}
+
+.stylish-2{
+	width:75px;
+	height:58px;
+	display:block;
+	border:none;
+	font-size:20px;
+	color:#888;
+	line-height:100px;
+	text-shadow:0 1px 0 #fff;
+	text-decoration:none;
+	text-align:center;
+	bottom:0;
+	left:50%;
+	margin-left:-37px;
+	position:absolute;
+	/*background:url(../images/fortune-cookie.png);*/
+}
+
+/*.stylish-2:hover{
+	border:none;
+	color:#aaa;
+	text-decoration:none;
+	/*background:url(../images/fortune-cookie.png);
+	background-position: 0px -266px;
+}*/
+
+.intro {
+  	font-family: 'Lato',sans-serif;
+  	font-weight: 400;
+  	color: #FFFFFF;
+  	width:85%;
+  	line-height: 22px;
+  	margin:10px 0 15px 0;
+}
+
+.figure{
+	/*margin-bottom: 0.5em;*/
+	margin:0;
+	padding:0;
+	/*float:left;*/
+	overflow:hidden;
+	display: block;
+	text-align: left;
+}
+
+img, 
+embed,
+object,
+video{
+	max-width:100%;
+	height: auto;
+	display: block;
+ }
+
+/* Set all parents to full height */
+html, body, 
+.container,
+.zek-czscroller,
+.zek-czscroller section { 
+	height: 100%;
+	font-family: 'Lato', sans-serif;
+}
+
+/* The nav is fixed on the right side  and we center it by translating it 50% 
+(we don't know it's height so we can't use the negative margin trick) */
+.zek-czscroller > nav {
+	position: fixed;
+	z-index: 9999;
+	right: 20px;
+	top: 50%;
+	width: 20px;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.zek-czscroller > nav a {
+	display: block;
+	position: relative;
+	z-index: 9999;
+	color: transparent;
+	width: 13px;
+	height: 13px;
+	outline: none;
+	margin: 13px 0;
+	border-radius: 13px;
+	border: 1px solid #fff;
+}
+
+.no-touch .zek-czscroller > nav a:hover {
+	background: rgba(255,255,255,0.6);
+}
+
+.zek-czscroller > nav a.zek-czcurrent {
+	background: #fff;
+}
+
+/* background-attachment does the trick */
+.zek-czscroller section {
+	position: relative;
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.no-touch .zek-czscroller section {
+	background-attachment: fixed;
+}
+
+#introduction {
+	background-image: url(../images/00.jpg);
+}
+
+#rat {
+	background-image: url(../images/01.jpg);
+}
+
+#ox {
+	background-image: url(../images/02.jpg);
+}
+
+#tiger {
+	background-image: url(../images/03.jpg);
+}
+
+#rabbit {
+	background-image: url(../images/04.jpg);
+}
+
+#dragon {
+	background-image: url(../images/05.jpg);
+}
+
+#snake {
+	background-image: url(../images/06.jpg);
+}
+
+#horse {
+	background-image: url(../images/07.jpg);
+}
+
+#goat {
+	background-image: url(../images/08.jpg);
+}
+
+#monkey {
+	background-image: url(../images/09.jpg);
+}
+
+#cock {
+	background-image: url(../images/10.jpg);
+}
+
+#dog {
+	background-image: url(../images/11.jpg);
+}
+
+#boar {
+	background-image: url(../images/12.jpg);
+}
+
+.date {
+	position:relative;
+	padding:10%;
+	top:0;/* could also make this 0; */
+	/*height:auto;*/
+}
+
+
+input.yearzyo {
+	width:50%;
+	display:inline-block;
+    padding:12px 10px;
+    color:#999;
+    font-family: 'Lato', sans-serif;
+	font-weight: 400; /* 300-light 400-regular -900-ultra-bold */
+  	font-size: 13px;
+  	letter-spacing: 2px;
+    border:1px solid rgba(0,0,0,0.6);
+    box-shadow:0px 0px 3px rgba(255,255,255,0.5), inset 0px 1px 4px rgba(0,0,0,0.2);
+    border-radius:3px;
+}
+
+input.yearbutton {
+	-webkit-appearance: none;
+    -moz-appearance: none;
+	display:inline-block;
+    padding:12px 10px;
+    color:#000000;
+    font-family: 'Lato', sans-serif;
+	font-weight: 400; /* 300-light 400-regular -900-ultra-bold */
+  	font-size: 13px;
+  	letter-spacing: 2px;
+    border:1px solid rgba(0,0,0,0.6);
+    border-radius:1px;
+    background: #EEEEEE;
+}
+
+::selection {
+	background: #000000;
+	}
+::-moz-selection {
+	background: #000000;
